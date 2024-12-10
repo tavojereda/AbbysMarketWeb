@@ -1,2 +1,2 @@
 import {} from './javascript/NavMenu'
-import {} from './javascript/bxSlider'
+import {} from './javascript/slider'

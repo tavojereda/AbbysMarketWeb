@@ -1,0 +1,12 @@
+@use '../abstracts/' as abs;
+
+.footer-container {
+	height: 500px;
+	background-color: abs.$colorOscuro;
+}
+
+.footer-card {
+    background-color: green;
+    width: 265px;
+    height: 300px;
+}

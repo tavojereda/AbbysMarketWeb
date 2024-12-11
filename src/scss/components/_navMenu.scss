@@ -32,6 +32,8 @@ a:hover {
 		// '. . btn-yellow btn-blue . .'
 ;
 	justify-items: center;
+	position: sticky;
+	top: 0%;
 }
 
 .navMenu {
@@ -265,7 +267,7 @@ a:hover {
 	.header .mobile-menu-trigger span {
 		display: block;
 		height: 2px;
-		background-color: #333333;
+		background-color: white;
 		width: 24px;
 		position: relative;
 	}
@@ -275,7 +277,7 @@ a:hover {
 		content: '';
 		position: absolute;
 		left: 0;
-		background-color: #333333;
+		background-color: white;
 		width: 100%;
 		height: 100%;
 	}

@@ -1,18 +1,40 @@
+@use '../abstracts/' as abs;
+
 .categ-container {
-    width: 100vw;
-    margin-top: 3.125rem /* 50px -> 3.125rem */;
-    display: flex;
-    justify-content: center;
+	margin-top: 3.125rem /* 50px -> 3.125rem */;
+	display: flex;
+	justify-content: center;
 }
 
 .categ-box {
-    display: flex;
-    justify-content: center;
-    width: 73rem;
+	display: flex;
+    flex-wrap:wrap;
+	justify-content: space-evenly;
+	width: 73rem;
 }
 
 .categ-card {
-    width: 380px;
-    height: 380px;
-    background-color: yellow;
+    display: flex;
+    justify-content: center;
+	& > img {
+		max-width: 23.75rem /* 380px -> 23.75rem */;
+		max-height: 23.75rem /* 380px -> 23.75rem */;
+	}
+}
+
+.categ-box-title {
+    background-color: white;
+    position: absolute;
+    max-height: 6.125rem /* 98px -> 6.125rem */;
+    
+}
+
+.categ-box-title > p {
+    color: abs.$colorOscuro;
+    font-size: 2em;
+    font-weight: normal;
+    margin-top: 1.875rem /* 30px -> 1.875rem */;
+    margin-bottom: .625rem /* 10px -> .625rem */;
+    margin-left: .9375rem /* 15px -> .9375rem */;
+    margin-right: .9375rem /* 15px -> .9375rem */;
 }

@@ -1,0 +1,24 @@
+.nosotros-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3.125rem /* 50px -> 3.125rem */;
+}
+
+.nosotros-box {
+	max-height: 683px;
+	display: flex;
+	margin-top: 3.125rem /* 50px -> 3.125rem */;
+	width: 67.5rem /* 1080px -> 67.5rem */;
+	height: 46.4375rem /* 743px -> 46.4375rem */;
+	align-items: end;
+	flex-wrap: wrap;
+}
+
+.nosotros-carta {
+	max-width: 33.75rem /* 540px -> 33.75rem */;
+	padding: 1.25rem /* 20px -> 1.25rem */;
+}
+
+div[class="nosotros-carta"] {
+	max-height: 35.5625rem /* 569px -> 35.5625rem */;
+}

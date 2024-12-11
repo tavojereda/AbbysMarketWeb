@@ -1,7 +1,11 @@
 @use '../abstracts/' as abs;
 
+#myCarousel {
+	max-width: 1140px;
+	margin: auto;
+}
+
 .slider-container {
-	width: 100vw;
 	background: abs.$colorClaro;
 }
 
@@ -10,6 +14,7 @@
 }
 
 .carousel-item > img {
+	max-width: 1140px;
 	display: block;
 	margin: auto;
 	max-height: 635px;

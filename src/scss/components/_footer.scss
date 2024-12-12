@@ -1,12 +1,37 @@
 @use '../abstracts/' as abs;
 
 .footer-container {
-	height: 500px;
 	background-color: abs.$colorOscuro;
+    padding-top: 2.5rem /* 40px -> 2.5rem */;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
 }
 
 .footer-card {
-    background-color: green;
     width: 265px;
     height: 300px;
+    margin-bottom: 6.25rem /* 100px -> 6.25rem */;
+    & > h2, li {
+        padding-left: .625rem /* 10px -> .625rem */;
+        padding-right: .625rem /* 10px -> .625rem */;
+    }
+
+    & li {
+        margin-bottom: 5px;
+    }
+}
+
+.fa-brands {
+    font-size: 40px;
+    margin-left: 20px;
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .footer-container {
+        margin-top: 550px;
+        
+    }
 }

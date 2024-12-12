@@ -7,6 +7,7 @@
 .nosotros-box {
 	max-height: 683px;
 	display: flex;
+
 	margin-top: 3.125rem /* 50px -> 3.125rem */;
 	width: 67.5rem /* 1080px -> 67.5rem */;
 	height: 46.4375rem /* 743px -> 46.4375rem */;
@@ -17,8 +18,32 @@
 .nosotros-carta {
 	max-width: 33.75rem /* 540px -> 33.75rem */;
 	padding: 1.25rem /* 20px -> 1.25rem */;
+	text-align: justify;
 }
 
-div[class="nosotros-carta"] {
+div[class='nosotros-carta'] {
 	max-height: 35.5625rem /* 569px -> 35.5625rem */;
+}
+
+@media (max-width: 991px) {
+	// .nosotros-container {
+	// 	margin-bottom: 200px;
+	// }
+
+	.nosotros-box {
+		margin-left: 50%;
+		margin-right: 50%;
+		& > img {
+			  max-width: 24.375rem /* 390px -> 24.375rem */;
+			//   max-width: 200%;
+
+		}
+	}
+
+	// .text-wrap {
+	// 	// white-space: normal;
+	// 	width: 100%;
+	// 	// text-align: justify;
+	// 	word-wrap: break-word;
+	// }
 }

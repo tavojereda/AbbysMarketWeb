@@ -1,37 +1,46 @@
 @use '../abstracts/' as abs;
 
 .footer-container {
-	background-color: abs.$colorOscuro;
-    padding-top: 2.5rem /* 40px -> 2.5rem */;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    color: white;
+	background-color: abs.$rojoOscuro;
+	padding-top: 2.5rem /* 40px -> 2.5rem */;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	color: abs.$navMenuFontBlanco;
 }
 
 .footer-card {
-    width: 265px;
-    height: 300px;
-    margin-bottom: 6.25rem /* 100px -> 6.25rem */;
-    & > h2, li {
-        padding-left: .625rem /* 10px -> .625rem */;
-        padding-right: .625rem /* 10px -> .625rem */;
-    }
+	width: 300px;
+	height: 300px;
+	margin-bottom: 6.25rem /* 100px -> 6.25rem */;
 
-    & li {
-        margin-bottom: 5px;
-    }
+	& > ul > li {
+		font-size: 20px;
+
+		& > a {
+			color: abs.$blanco;
+		}
+	}
+
+	& > h3,
+	li {
+		padding-left: 0.625rem /* 10px -> .625rem */;
+		padding-right: 0.625rem /* 10px -> .625rem */;
+	}
+
+	& li {
+		margin-bottom: 5px;
+	}
 }
 
 .fa-brands {
-    font-size: 40px;
-    margin-left: 20px;
-    color: white;
+	font-size: 40px;
+	margin-left: 20px;
+	color: abs.$blanco;
 }
 
 @media (max-width: 991px) {
-    .footer-container {
-        margin-top: 550px;
-        
-    }
+	.footer-container {
+		margin-top: 550px;
+	}
 }

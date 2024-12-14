@@ -1,10 +1,16 @@
+@use '../abstracts' as abs;
+@use '../base';
+@use 'navMenu';
+@use 'footer';
+
+
 .box {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 10px;
 }
 
 .productos-container {
-    margin-bottom: 4.125rem /* 66px -> 4.125rem */;
+	margin-bottom: 4.125rem /* 66px -> 4.125rem */;
 }
 
 .card {
@@ -13,7 +19,7 @@
 	transition: 0.5s;
 }
 .card:hover {
-	border: 1px solid red;
+	border: 1px solid abs.$rojoOscuro;
 	border-radius: 30px;
 }
 .card .cardImg {
@@ -32,12 +38,26 @@
 	text-align: center;
 }
 .card .info h3 {
-	color: rgb(70, 66, 66);
+	color: abs.$colorFontTitulos;
 }
 .card .info p {
-	color: rgb(0, 0, 0);
+	color: abs.$colorFontCuerpos;
 }
 
 .ligne {
 	display: flex;
+}
+
+@media (min-width: 394px) and (max-width: 480px) {
+	.productos-container {
+		padding-left: 6.3125rem /* 101px -> 6.3125rem */;
+		padding-right: 6.3125rem /* 101px -> 6.3125rem */;
+	}
+}
+
+@media (max-width: 393px) {
+	.productos-container {
+		padding-left: 3.5938rem /* 57.5px -> 3.5938rem */;
+		padding-right: 3.5938rem /* 57.5px -> 3.5938rem */;
+	}
 }

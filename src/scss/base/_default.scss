@@ -1,0 +1,10 @@
+@use '../abstracts/' as abs;
+
+body {
+	height: 100vh;
+	font-family: abs.$fuenteTitulos;
+	line-height: 1.5;
+	font-weight: 400;
+    font-style: normal;
+	overflow-x: hidden;
+}
